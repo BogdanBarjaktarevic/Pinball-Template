@@ -1,0 +1,13 @@
+html,body,h1,h2,h3,h4,h5,h6,ul,li {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+	font-family: $primary-font;
+}
+button {
+	border: none;
+	background: none;
+}
+button:focus { outline:0 !important; };

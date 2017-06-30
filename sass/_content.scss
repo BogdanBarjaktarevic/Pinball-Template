@@ -1,0 +1,103 @@
+#content {
+	padding: 50px 0 150px 0;
+	background-color: $light-gray-color;
+	display: none;
+	.movie-box {
+		background-color: #fff;
+		margin-bottom: 25px;
+		transition: all .4s ease-in-out;
+			&:hover {
+				transform: scale(1.05);
+			}
+		.description {
+			margin: 0 25px 0 20px;
+		}
+		h4 {
+			margin: 20px 0 15px 0;
+			color: $h4-color;
+			font-weight: 600;
+		}
+		h5 {
+			margin-bottom: 22px;
+			color: $h5-color;
+			font-weight: 500;
+		}
+		span {
+			margin-right: 7px;
+		}
+		p {
+			color: $paragraph-color;
+			font-weight: 300;
+		}
+		.rate-button {
+			    color: white;
+			    margin-left: 25px;
+			    padding: 5px 20px 5px 20px;
+			    display: block;
+			    border-radius: 4px;
+			    background-color: #87cefa;
+			    &:hover {
+			    	background-color: darken(#87cefa,10%);
+			    }
+		}
+		.rate-stars {
+			padding-bottom: 20px;
+			margin-left: 25px;
+			display: none;
+		}
+		.rate-stars > a {
+			padding-left: 7px;
+		    background: #d6d6d6;
+		    float: right;
+		    margin-right: 25px;
+		    border-radius: 50%;
+		    display: block;
+		    padding-right: 7px;
+		    padding-top: 2px;
+		    padding-bottom: 2px;
+		    transition: all .3s ease-in-out;
+		    &:hover {
+		    	background-color: #133783;
+		    }
+		}
+		.rate-stars > img:last-child {
+			float: right;
+			margin-right: 20px;
+		}
+	}
+	.movie-box > img:first-child {
+			width: 100%;
+			cursor: pointer;
+	}
+	.col-md-3 > .movie-box:last-child {
+		margin-bottom: 0;
+	}
+	#light-box {
+		background: rgba(0, 0, 0, 0.7);
+    	position: fixed;
+    	width: 100%;
+    	height: 100vh;
+    	left: 0;
+    	top:0;
+    	z-index: 1000;
+    	display: none;
+    	.glyphicon-remove {
+    		position: absolute;
+    		color: white;
+    		font-size: 30px;
+    		top: 15px;
+    		right: 15px;
+    		cursor: pointer;
+    		transition: all .4s ease-in-out;
+			&:hover {
+				transform: scale(1.2);
+			}
+    	}
+   		.image {
+   			justify-content: center;
+    		align-items: center;
+    		display: flex;
+    		height: 100vh;
+   		}
+	}
+}
